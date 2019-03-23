@@ -1,7 +1,7 @@
 {
   "name": "exc-1__dc",
   "version": "1.0.0",
-  "homepage": "./",
+  "homepage": "https://rkosak237.github.io/daftacademy-frontend_levelup-spring2019",
   "description": "First exercise",
   "main": "index.js",
   "scripts": {
