@@ -1,12 +1,26 @@
-const merge = require("webpack-merge");
-const common = require("./webpack.common.js");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = merge(common, {
-  mode: "production",
-  devtool: "source-map",
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
+module.exports = {
+  entry: "./src/index.js",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    })
+  ],
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
   }
-});
+};

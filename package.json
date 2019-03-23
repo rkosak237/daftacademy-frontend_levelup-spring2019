@@ -1,15 +1,14 @@
 {
   "name": "exc-1__dc",
   "version": "1.0.0",
-  "homepage": "",
+  "homepage": "./",
   "description": "First exercise",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Robert Kosak",
   "license": "ISC",
@@ -17,12 +16,27 @@
     "gh-pages": "^2.0.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "browserslist": "^4.5.2",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
   }
 }
