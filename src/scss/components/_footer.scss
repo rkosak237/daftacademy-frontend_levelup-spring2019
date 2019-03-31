@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    &-contact {
+        display: flex;
+
+        &__link {
+            color: $font-color-accent;
+            text-decoration: none;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+    }
+}

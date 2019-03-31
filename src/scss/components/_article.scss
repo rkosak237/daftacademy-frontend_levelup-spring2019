@@ -1,0 +1,48 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    margin: 2rem 0 2rem 0;
+    width: 95%;
+
+    &__header {
+        height: 5rem;
+        margin: 0 0 2rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__grid {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+
+    &__button {
+        font-size: 4rem;
+    }
+
+    &__logo {
+        color: $font-color-accent;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        border: 2px solid $border-color-accent;
+        margin-top: -10rem;
+    }
+}
+
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}

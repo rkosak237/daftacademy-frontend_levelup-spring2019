@@ -19,8 +19,8 @@ module.exports = {
         test: /\.s?css$/,
         use: [
           devMode
-            ? MiniCssExtractPlugin.loader
-            : { loader: "style-loader", options: { sourceMap: true } },
+          ? MiniCssExtractPlugin.loader :
+          { loader: "style-loader", options: { sourceMap: true } },
           { loader: "css-loader", options: { sourceMap: true } },
           { loader: "postcss-loader", options: { sourceMap: true, options: {} } },
           { loader: "sass-loader", options: { sourceMap: true } }
