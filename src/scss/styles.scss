@@ -1,5 +1,5 @@
 @import './base/reset';
-@import './base/colors';
+@import './base/variables';
 @import './base/scroll';
 @import './base/media-queries';
 @import './base/config';
@@ -7,42 +7,24 @@
 //components
 @import './containers/container';
 @import './components/article';
+@import './components/header';
+@import './components/grid';
+@import './components/btn';
 @import './components/footer';
 
 
 .nav {
     &__desktop {
         display: none;
-    }
 
-    &__mobile {}
-
-    &__element {}
-}
-
-.grid {
-    overflow-y: auto;
-
-    &__element {
-        cursor: pointer;
-        height: 30rem;
-        border: 2px solid $font-color-accent;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        margin: 0 0 2rem 0;
-        transition: .5s ease-in-out;
-
-        &:hover {
-            border: 1rem solid $hoover-border;
+        @media all and (min-width: $tablet-landscape) {
+            display: block;
         }
     }
 
-
-    &__text {
-        color: $font-color-secondary;
-        font-size: 4rem;
-        font-weight: bold;
+    &__mobile {
+        visibility: hidden;
     }
+
+    &__element {}
 }

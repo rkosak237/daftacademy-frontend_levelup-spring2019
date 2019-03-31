@@ -25,7 +25,20 @@ module.exports = {
           { loader: "postcss-loader", options: { sourceMap: true, options: {} } },
           { loader: "sass-loader", options: { sourceMap: true } }
         ]
-      }
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          useRelativePath: true,
+          outputPath: "img/",
+        },
+      },
     ]
   },
   plugins: [

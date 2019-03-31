@@ -1,0 +1,28 @@
+.header {
+    margin: 0 0 4.68rem 0;
+
+    &__button {
+        font-size: 4rem;
+
+        @media all and (min-width: $tablet-landscape) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        color: $font-color-accent;
+        font-family: $secondary-font-family;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.28rem solid $border-color-accent;
+        margin-top: -6.8rem;
+        height: 5rem;
+        width: 12.5rem;
+
+        @media (min-width: $tablet) and (max-width: $desktop-small) {
+            margin-top: -6rem;
+        }
+    }
+}

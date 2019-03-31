@@ -11,9 +11,39 @@ $desktop-small: 1280px;
 $desktop-medium: 1440px;
 
 
+// @media all and (min-width: $desktop-medium) { }
+
+// @media all and (min-width: $desktop-small) { }
+
+// @media all and (min-width: $tablet-landscape) { }
+
+// @media all and (min-width: $tablet) { }
+
+// @media all and (min-width: $phone-big) { }
+
+// @media all and (min-width: $phone) { }
+
+// @media all and (min-width: $phone-small) { }
+
+// @media all and ($desktop-small: 1024px) and (max-width: $desktop-medium) { }
+
+// @media all and ($tablet-landscape: 1024px) and (max-width: $desktop-small) { }
+
+// @media all and (min-width: $tablet) and (max-width: $tablet-landscape) { }
+
+// @media all and (min-width: $phone-big) and (max-width: $tablet) { }
+
+// @media all and (min-width: $phone) and (max-width: $phone-big) { }
+
+// @media all and (max-width: $phone-small) { }
+
+
+
 // @media all and (min-width: 1024px) and (max-width: 1280px) { }
 
 // @media all and (min-width: 768px) and (max-width: 1024px) { }
+
+// @media all and (min-width: 560px) and (max-width: 1024px) { }
 
 // @media all and (min-width: 480px) and (max-width: 768px) { }
 
