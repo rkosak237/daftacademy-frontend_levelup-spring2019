@@ -19,5 +19,26 @@
 
     &__social-media {
         display: flex;
+        justify-content: space-between;
+        width: 13rem;
+    }
+
+    &__icons-container {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+    }
+
+    &__social-link {}
+
+    &__icon {
+        opacity: 0.5;
+        width: 60%;
+        transition: .5s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }

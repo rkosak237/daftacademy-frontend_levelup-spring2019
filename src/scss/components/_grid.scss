@@ -5,8 +5,17 @@
     flex-wrap: wrap;
     margin: 0 0 5rem 0;
 
-    @media (min-width: $tablet) and (max-width: $desktop-medium) {
-        height: 30rem;
+
+    @media (min-width: $tablet) and (max-width: $tablet-landscape) {
+        height: 51rem;
+    }
+
+    @media (min-width:$tablet-landscape) and (max-width: $desktop-small) {
+        height: 73rem;
+    }
+
+    @media (min-width:$desktop-small) and (max-width: $desktop-medium) {
+        height: 58vh;
     }
 
     @media (min-width: $desktop-big) {
@@ -35,19 +44,14 @@
             opacity: 0.5;
         }
 
-        @media (min-width: $tablet) and (max-width: $tablet-landscape) {
+        @media (min-width: $tablet) and (max-width: $desktop-small) {
             margin: 3%;
-            width: 27%
+            width: 43%;
         }
 
-        @media (min-width: $tablet-landscape) and (max-width: $desktop-big) {
-            margin: 1%;
-            width: 30.5%;
-        }
-
-        @media (min-width: $desktop-2k) {
-            margin: 1%;
-            width: 30.5%;
+        @media (min-width: $desktop-small) {
+            margin: 3%;
+            width: 25%;
         }
     }
 
@@ -61,12 +65,20 @@
         text-align: center;
         line-height: 2;
         color: $font-color-secondary;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
         position: absolute;
         transition: .5s ease-in-out;
 
-        @media all and (min-width: $desktop-big) {
+        @media (min-width: $tablet-landscape) and (max-width: $desktop-small) {
+            font-size: 3.5rem;
+        }
+
+        @media (min-width: $desktop-medium) and (max-width: $desktop-big) {
+            font-size: 4rem;
+        }
+
+        @media all and (min-width: $desktop-2k) {
             font-size: 2.8rem;
         }
 

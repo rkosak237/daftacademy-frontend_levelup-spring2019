@@ -1,4 +1,5 @@
-import scripts from './js/scripts';
+import { appendDrinks, appendSMicons } from "./js/scripts";
 import './scss/styles.scss';
 
-scripts();
+appendDrinks();
+appendSMicons();

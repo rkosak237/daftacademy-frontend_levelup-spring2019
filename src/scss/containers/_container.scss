@@ -22,17 +22,18 @@
 .container__content {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
+    @media all and (min-width: $tablet) and (max-width: $tablet-landscape) {
+        width: 90%;
+    }
 
     @media all and (min-width: $desktop-small) and (max-width: $desktop-medium) {
-        display: flex;
 
         width: 90%;
     }
 
     @media all and (min-width: $desktop-big) {
-        display: flex;
-
         width: 73%;
-        overflow: hidden;
     }
 }

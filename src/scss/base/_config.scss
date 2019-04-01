@@ -11,8 +11,12 @@ html {
     font-size: 13px;
     color: $font-color-primary;
 
-    @media (min-width: $tablet-landscape) and (max-width: $desktop-medium) {
+    @media (min-width: $tablet-landscape) and (max-width: $desktop-small) {
         font-size: 11px;
+    }
+
+    @media (min-width: $desktop-small) and (max-width: $desktop-medium) {
+        font-size: 13px;
     }
 
     @media (min-width: $desktop-big) {
