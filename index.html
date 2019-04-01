@@ -6,8 +6,50 @@
         <title>exc1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
+    <link href="main.css" rel="stylesheet"></head>
     <body>
+        <div class="container">
+            <main class="main">
+                <article class="article">
+                    <header class="article__header header">
+                        <div class="header__logo">d'inks</div>
+                        <button class="button header__button">&#x2630</button>
+                    </header>
+                    <div class="container__content">
+                        <nav class="nav">
+                            <ul class="nav__desktop">
+                                <li class="nav__element"><a class="nav__link active" href="#">Beer</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Coffee / Tea</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Cocktail</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Cocoa</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Milk / Float / Shake</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Shot</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Punch / Party Drink</a></li>
+                                <li class="nav__element"><a class="nav__link" href="#">Homemade Liqueur</a></li>
+                            </ul>
+                            <ul class="nav__mobile">
+                                <li class="nav__element"></li>
+                            </ul>
+                        </nav>
+                        <section id="gridLayout" class="article__grid grid">
+                        </section>
+                    </div>
+                </article>
+            </main>
+            <footer class="footer">
+                <section class="footer__container">
+                    <div class="footer__contact footer-contact">
+                        <p>Say hello! ~</p>
+                        <a class="footer-contact__link"
+                        href="hi@dinks.com">hi@dinks.com</a>
+                    </div>
+                    <div class="footer__social-media">
+                        <p>Follow us</p>
+                        <div id="socialMediaIcons" class="footer__icons-container">
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </div>
     <script type="text/javascript" src="bundle.js"></script></body>
 </html>
