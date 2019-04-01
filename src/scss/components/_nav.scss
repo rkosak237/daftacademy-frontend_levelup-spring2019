@@ -1,8 +1,4 @@
 .nav {
-    // margin: 0 0 4.68rem 2rem;
-    // margin: 0 0 0rem 2rem;
-    margin: 0 0 0 0.5rem;
-
 
     &__desktop {
         display: none;
@@ -19,5 +15,55 @@
 
     &__element {
         padding: 1rem;
+    }
+
+    &__link {
+        font-size: 1.2rem;
+        position: relative;
+        text-decoration: none;
+        color: $font-color-accent;
+        opacity: 0.5;
+        transition: 0.4s ease-in-out;
+
+
+        &:hover {
+            opacity: 1;
+
+        }
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            width: 0%;
+            bottom: -9px;
+            left: 0;
+            height: 2px;
+            background-color: $border-color-accent;
+            border-radius: 11px;
+            transition: 0.2s width cubic-bezier(0, 0, 0.82, 0.37);
+        }
+
+        &:hover:after {
+            width: 80%;
+            height: 2px;
+        }
+    }
+}
+
+.active {
+    opacity: 1;
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        width: 0%;
+        bottom: -9px;
+        left: 0;
+        height: 2px;
+        background-color: $border-color-accent;
+        border-radius: 11px;
+        transition: 0.2s width cubic-bezier(0, 0, 0.82, 0.37);
+        width: 80%;
+        height: 2px;
     }
 }

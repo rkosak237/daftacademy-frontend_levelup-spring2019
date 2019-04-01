@@ -5,12 +5,17 @@
     flex-wrap: wrap;
     margin: 0 0 5rem 0;
 
-    @media (min-width: $tablet) {
-        height: 42rem;
-        justify-content: flex-start;
+    @media (min-width: $tablet) and (max-width: $desktop-medium) {
+        height: 30rem;
     }
 
+    @media (min-width: $desktop-big) {
+        height: 65vh;
+    }
 
+    @media (min-width: $desktop-2k) {
+        height: 55vh;
+    }
 
     &__element {
         border: 0rem solid $hoover-border;
@@ -35,9 +40,14 @@
             width: 27%
         }
 
-        @media all and (min-width: $tablet-landscape) {
-            margin: 3%;
-            width: 27%
+        @media (min-width: $tablet-landscape) and (max-width: $desktop-big) {
+            margin: 1%;
+            width: 30.5%;
+        }
+
+        @media (min-width: $desktop-2k) {
+            margin: 1%;
+            width: 30.5%;
         }
     }
 
