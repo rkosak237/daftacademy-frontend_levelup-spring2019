@@ -1,0 +1,23 @@
+.nav {
+    // margin: 0 0 4.68rem 2rem;
+    // margin: 0 0 0rem 2rem;
+    margin: 0 0 0 0.5rem;
+
+
+    &__desktop {
+        display: none;
+
+        @media all and (min-width: $tablet-landscape) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__mobile {
+        visibility: hidden;
+    }
+
+    &__element {
+        padding: 1rem;
+    }
+}
